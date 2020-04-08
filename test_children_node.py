@@ -18,7 +18,8 @@ for _tr2 in _table.children:
 print("-------------------3")
 for _tr1 in first_tr.next_siblings:
     try:
-        print(_tr1.find_all('td')[2].get_text())
+        text = _tr1.find_all('td')[2].get_text()
+        print(text)
     except AttributeError as e:
         continue
     
